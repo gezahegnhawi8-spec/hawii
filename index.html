@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hawi Gezahegn – IT Student at Ambo University. Personal portfolio showcasing projects, skills, and contact information." />
+  <title>Hawi Gezahegn | IT Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-mode">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Hawi<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"    class="nav-link">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects"class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / HOME ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span class="greeting-badge">
+            <i class="fas fa-terminal"></i>&nbsp; Hello, World!
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Hawi Gezahegn</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          <span class="typed-prefix">I'm passionate about&nbsp;</span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </p>
+
+        <p class="hero-description">
+          IT Student at <strong>Ambo University</strong> — building tomorrow's digital
+          systems, one line of code at a time. I bridge the gap between technology
+          and real-world solutions through networking, development, and systems thinking.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i>&nbsp; View My Work
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i>&nbsp; Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:hawi@example.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-card-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="code-filename">profile.json</span>
+          </div>
+          <pre class="code-body"><span class="c-bracket">{</span>
+  <span class="c-key">"name"</span>: <span class="c-str">"Hawi Gezahegn"</span>,
+  <span class="c-key">"role"</span>: <span class="c-str">"IT Student"</span>,
+  <span class="c-key">"university"</span>: <span class="c-str">"Ambo University"</span>,
+  <span class="c-key">"focus"</span>: <span class="c-bracket">[</span>
+    <span class="c-str">"Web Development"</span>,
+    <span class="c-str">"Networking"</span>,
+    <span class="c-str">"Systems Admin"</span>
+  <span class="c-bracket">]</span>,
+  <span class="c-key">"status"</span>: <span class="c-str">"Open to Opportunities"</span>,
+  <span class="c-key">"coffee"</span>: <span class="c-num">true</span>
+<span class="c-bracket">}</span></pre>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years of Study</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Tech Skills</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll to About">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 01. about_me</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-subtitle">A quick introduction to my background and journey</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-avatar-col">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <div class="avatar-placeholder">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="avatar-badge-wrapper">
+              <span class="avatar-badge">
+                <i class="fas fa-map-marker-alt"></i> Ethiopia
+              </span>
+            </div>
+          </div>
+
+          <div class="about-quick-info">
+            <div class="info-row"><i class="fas fa-university"></i><span>Ambo University</span></div>
+            <div class="info-row"><i class="fas fa-book-open"></i><span>BSc Information Technology</span></div>
+            <div class="info-row"><i class="fas fa-calendar-alt"></i><span>Expected Graduation: 2026</span></div>
+            <div class="info-row"><i class="fas fa-language"></i><span>Amharic, English</span></div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <h3>IT Student & Aspiring Tech Professional</h3>
+          <p>
+            I'm <strong>Hawi Gezahegn</strong>, an Information Technology student at
+            <strong>Ambo University</strong>, Ethiopia. My academic journey has been a
+            deep dive into how systems work — from the physical cables of a network to
+            the abstract logic of a well-written algorithm.
+          </p>
+          <p>
+            I have a strong interest in <strong>web development</strong>, building
+            intuitive interfaces and robust back-ends that solve real problems.
+            Alongside that, I am passionate about <strong>computer networking</strong>,
+            understanding how devices communicate, and how to secure and optimize those
+            connections.
+          </p>
+          <p>
+            My academic path has also given me a solid foundation in
+            <strong>systems administration</strong> — managing servers, configuring
+            environments, and keeping digital infrastructure running smoothly. I believe
+            great technology is built at the intersection of curiosity and discipline,
+            and I carry both with me every day.
+          </p>
+
+          <div class="about-tags">
+            <span class="tag"><i class="fas fa-network-wired"></i> Networking</span>
+            <span class="tag"><i class="fas fa-code"></i> Web Dev</span>
+            <span class="tag"><i class="fas fa-server"></i> Sys Admin</span>
+            <span class="tag"><i class="fas fa-database"></i> Databases</span>
+            <span class="tag"><i class="fab fa-git-alt"></i> Version Control</span>
+            <span class="tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" style="margin-top:1.5rem; display:inline-flex; width:fit-content">
+            <i class="fas fa-download"></i>&nbsp; Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 02. skills</span>
+        <h2 class="section-title">My Toolkit</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-categories">
+
+        <!-- Front-End -->
+        <div class="skill-category" data-delay="0">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap purple">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Front-End Development</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-html">HTML5</span>
+            <span class="badge badge-css">CSS3</span>
+            <span class="badge badge-js">JavaScript</span>
+            <span class="badge badge-default">Responsive Design</span>
+            <span class="badge badge-default">Bootstrap</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>HTML / CSS</span><div class="bar"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>JavaScript</span><div class="bar"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category" data-delay="100">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap blue">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Databases & SQL</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-default">MySQL</span>
+            <span class="badge badge-default">SQLite</span>
+            <span class="badge badge-default">SQL Queries</span>
+            <span class="badge badge-default">DBMS Concepts</span>
+            <span class="badge badge-default">ERD Design</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>SQL / MySQL</span><div class="bar"><div class="bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>DB Design</span><div class="bar"><div class="bar-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python / Java -->
+        <div class="skill-category" data-delay="200">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap green">
+              <i class="fas fa-terminal"></i>
+            </div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-python">Python</span>
+            <span class="badge badge-java">Java</span>
+            <span class="badge badge-default">OOP</span>
+            <span class="badge badge-default">Algorithms</span>
+            <span class="badge badge-default">Data Structures</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Python</span><div class="bar"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Java</span><div class="bar"><div class="bar-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- System Admin -->
+        <div class="skill-category" data-delay="300">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap orange">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>System Administration</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-default">Linux</span>
+            <span class="badge badge-default">Windows Server</span>
+            <span class="badge badge-default">Networking</span>
+            <span class="badge badge-default">TCP/IP</span>
+            <span class="badge badge-default">Cisco Packet Tracer</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Linux CLI</span><div class="bar"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Networking</span><div class="bar"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Git / GitHub -->
+        <div class="skill-category" data-delay="400">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap red">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3>Git & Version Control</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-default">Git</span>
+            <span class="badge badge-default">GitHub</span>
+            <span class="badge badge-default">Branching</span>
+            <span class="badge badge-default">Pull Requests</span>
+            <span class="badge badge-default">Collaboration</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Git / GitHub</span><div class="bar"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Team Workflows</span><div class="bar"><div class="bar-fill" data-width="73"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office / Tools -->
+        <div class="skill-category" data-delay="500">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrap cyan">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Tools & Productivity</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="badge badge-default">VS Code</span>
+            <span class="badge badge-default">MS Office</span>
+            <span class="badge badge-default">Figma (Basics)</span>
+            <span class="badge badge-default">Postman</span>
+            <span class="badge badge-default">VirtualBox</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>VS Code</span><div class="bar"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Figma / Design</span><div class="bar"><div class="bar-fill" data-width="55"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 03. projects</span>
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Academic and personal work I'm proud of</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="db">Database</button>
+        <button class="filter-btn" data-filter="network">Network</button>
+        <button class="filter-btn" data-filter="sys">Systems</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- PROJECT 1: Haile Resort Ziway (FEATURED) -->
+        <div class="project-card featured" data-category="web db">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fas fa-hotel"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="GitHub Repo" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" title="Live Demo" aria-label="Live Preview">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <span class="featured-badge">⭐ Featured Project</span>
+          <h3 class="project-title">Haile Resort Ziway</h3>
+          <p class="project-description">
+            A full database-driven hotel management system for Haile Resort Ziway. 
+            Designed the relational database schema, implemented booking records, 
+            guest management, and service tracking. Built as part of my Database 
+            Systems coursework at Ambo University.
+          </p>
+          <div class="project-tech">
+            <span>MySQL</span>
+            <span>SQL</span>
+            <span>Database Design</span>
+            <span>ERD</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-table"></i> 12 Tables</span>
+            <span><i class="fas fa-users"></i> Multi-user</span>
+            <span><i class="fas fa-star"></i> Academic Project</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card" data-category="web">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="GitHub Repo" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Preview"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">University Course Website</h3>
+          <p class="project-description">
+            A responsive multi-page website designed for a university course module.
+            Built with HTML5, CSS3 and vanilla JavaScript. Features a clean navigation
+            system, lecture schedule, and downloadable resources page.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-mobile-alt"></i> Responsive</span>
+            <span><i class="fas fa-code"></i> Frontend</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card" data-category="network">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="GitHub Repo" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Report" aria-label="Report"><i class="fas fa-file-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Campus LAN Design</h3>
+          <p class="project-description">
+            Designed and simulated a complete Local Area Network (LAN) for a 
+            university campus using Cisco Packet Tracer. Configured VLANs, routing 
+            protocols, DHCP, and DNS services across multiple buildings.
+          </p>
+          <div class="project-tech">
+            <span>Cisco Packet Tracer</span>
+            <span>TCP/IP</span>
+            <span>VLANs</span>
+            <span>Routing</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-building"></i> 4 Buildings</span>
+            <span><i class="fas fa-sitemap"></i> Full Topology</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card" data-category="sys">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fab fa-linux"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="GitHub Repo" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Linux Server Setup Lab</h3>
+          <p class="project-description">
+            Configured a full LAMP stack (Linux, Apache, MySQL, PHP) on a VirtualBox
+            environment for a web hosting simulation. Set up user management, 
+            firewall rules (UFW), and automated backups with cron jobs.
+          </p>
+          <div class="project-tech">
+            <span>Linux</span>
+            <span>Apache</span>
+            <span>MySQL</span>
+            <span>Bash</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-server"></i> LAMP Stack</span>
+            <span><i class="fas fa-lock"></i> Secured</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card" data-category="web db">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="GitHub Repo" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Preview"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Record System</h3>
+          <p class="project-description">
+            A web-based student record management system with CRUD operations.
+            Built with a PHP backend connected to a MySQL database. Features 
+            search, filter by department, and printable grade reports.
+          </p>
+          <div class="project-tech">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>HTML/CSS</span>
+            <span>CRUD</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-graduation-cap"></i> Academic</span>
+            <span><i class="fas fa-database"></i> Full-Stack</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card" data-category="web">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <i class="fas fa-id-card"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" title="GitHub Repo" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Preview" aria-label="Live Preview"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Portfolio v1</h3>
+          <p class="project-description">
+            My first personal portfolio — a static website to showcase my academic
+            projects. Built from scratch with pure HTML and CSS. This project was the 
+            starting point of my web development journey.
+          </p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-stats">
+            <span><i class="fas fa-paint-brush"></i> Custom Design</span>
+            <span><i class="fas fa-rocket"></i> First Project</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta">
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-github"></i>&nbsp; More on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// 04. contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project, opportunity, or just want to say hi?</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left Info Panel -->
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>
+            I'm always open to discussing academic collaborations, internship
+            opportunities, tech projects, or any exciting ideas. Don't hesitate
+            to reach out — I'll get back to you as soon as possible!
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:hawi@example.com" class="contact-link">
+              <div class="contact-link-icon email-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-link-text">
+                <span class="link-label">Email</span>
+                <span class="link-value">hawi@example.com</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon github-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-link-text">
+                <span class="link-label">GitHub</span>
+                <span class="link-value">github.com/hawig</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-link">
+              <div class="contact-link-icon linkedin-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-link-text">
+                <span class="link-label">LinkedIn</span>
+                <span class="link-value">linkedin.com/in/hawig</span>
+              </div>
+            </a>
+
+            <a href="tel:+251900000000" class="contact-link">
+              <div class="contact-link-icon phone-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-link-text">
+                <span class="link-label">Phone</span>
+                <span class="link-value">+251 9XX XXX XXX</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="availability-badge">
+            <span class="pulse-dot"></span>
+            Currently open to internship opportunities
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name <span class="required">*</span></label>
+              <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+              <span class="form-error" id="fnameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Choose a subject…</option>
+              <option value="collaboration">Academic Collaboration</option>
+              <option value="internship">Internship / Opportunity</option>
+              <option value="project">Project Inquiry</option>
+              <option value="other">Just Saying Hi!</option>
+            </select>
+            <span class="form-error" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea or question…" required></textarea>
+            <span class="char-count" id="charCount">0 / 500</span>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="submitText"><i class="fas fa-paper-plane"></i>&nbsp; Send Message</span>
+            <span id="submitLoading" style="display:none"><i class="fas fa-spinner fa-spin"></i>&nbsp; Sending…</span>
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            Message sent! I'll get back to you soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Hawi<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>IT Student at Ambo University. Building things with code, curiosity, and lots of coffee ☕</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://github.com/" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="mailto:hawi@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> Hawi Gezahegn. All rights reserved.</p>
+        <p>Built with <span class="heart">♥</span> &amp; pure code</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
